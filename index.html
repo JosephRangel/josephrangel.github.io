@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="description" content="Desarrollador Web Profesional" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link type="image/x-icon" href="public/image/code-solid.svg" rel="icon" />
+	<link href="https://fonts.googleapis.com/css?family=K2D:300|Rambla:700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css" />
+	<link rel="stylesheet" href="public/css/style.css" />
+	<title>Desarrollador Web</title>
+</head>
+<body>
+	<div class="loader">
+		<div class="loader__container">
+			<div class="loader__hexagon"></div>
+			<p class="loader__message">Cargando portafolio...</p>
+		</div>
+	</div>
+
+	<div class="blanketBody"></div>
+
+	<div class="control-actions">
+		<span class="control-actions__menu"><i class="fas fa-hamburger"></i></span>
+	</div>
+
+	<div class="container-master">
+		<!-- Éste es el menú para dispositivos móviles y tablet's -->
+		<div class="myself__container__menu">
+			<div class="myself__data">
+				<div class="myself__data__container-avatar">
+					<div class="myself__data__avatar"></div>
+				</div>
+				<div class="myself__data__info">
+					<h4 class="myself__data__info__fullname">José Antonio Rangel Reyes</h4>
+					<p class="myself__data__info__role">Desarrollador Full Stack</p>
+				</div>
+			</div>
+
+			<ul class="myself__menu">
+				<a href="#home" class="myself__menu__link myself__menu__link--active">
+					<li class="myself__menu__item">
+						<span class="fa-stack fa-2x">
+							<i class="fas fa-square fa-stack-2x"></i>
+							<i class="fa fa-home fa-stack-1x fa-inverse"></i>
+						</span>
+						Inicio
+					</li>
+				</a>
+				<a href="#welcome" class="myself__menu__link">
+					<li class="myself__menu__item">
+						<span class="fa-stack fa-2x">
+							<i class="fas fa-square fa-stack-2x"></i>
+							<i class="fa fa-lightbulb fa-stack-1x fa-inverse"></i>
+						</span>
+						Acerca de Mi
+					</li>
+				</a>
+				<a href="#portfolio" class="myself__menu__link">
+					<li class="myself__menu__item">
+						<span class="fa-stack fa-2x">
+							<i class="fas fa-square fa-stack-2x"></i>
+							<i class="fa fa-briefcase fa-stack-1x fa-inverse"></i>
+						</span>
+						Mi Portafolio
+					</li>
+				</a>
+				<a href="https://github.com/JosephRangel" target="_blank" class="myself__menu__link">
+					<li class="myself__menu__item">
+						<span class="fa-stack fa-2x">
+							<i class="fas fa-square fa-stack-2x"></i>
+							<i class="fab fa-github-m fa-stack-1x fa-inverse"></i>
+						</span>
+						GitHub
+					</li>
+				</a>
+			</ul>
+		</div>
+
+		<!-- Esta es la sección principal, donde se muestra la información básica -->
+		<section class="container__myself">
+			<span class="myself__menu__action"><i class="fas fa-hamburger"></i></span>
+
+			<article class="myself">
+				<div class="myself__profile">
+					<div class="myself__container__avatar">
+						<div class="myself__avatar"></div>
+					</div>
+					<h1 class="myself__fullname">José Rangel</h1>
+					<p class="myself__description">Ingeniero de Sistemas - Desarrollador Full Stack</p>
+				</div>
+				<div class="myself__footer">
+					<div class="myself__footer__social">
+						<a class="myself__footer__link" href="https://www.linkedin.com/in/jose-antonio-rangel-reyes-049aab1a0/" target="_blank">
+							<i class="fab fa-linkedin"></i>
+						</a>
+						<a class="myself__footer__link" href="https://github.com/JosephRangel" target="_blank">
+							<i class="fab fa-github-square"></i>
+						</a>
+						<a class="myself__footer__link" href="https://bitbucket.org/JoseRangel/" target="_blank">
+							<i class="fab fa-bitbucket"></i>
+						</a>
+					</div>
+				</div>
+			</article>
+		</section>
+
+		<!-- Éste contenedor muestra los artículos que actualmente están en la página -->
+		<section class="container__articles">
+			<nav class="menu">
+				<ul class="menu-list">
+					<a href="#welcome" class="menu-list__link menu-list__link--active">
+						<li class="menu-list__item">Acerca de Mi</li>
+					</a>
+					<a href="#portfolio" class="menu-list__link">
+						<li class="menu-list__item">Mi Portafolio</li>
+					</a>
+				</ul>
+			</nav>
+
+			<article class="welcome article--show" id="welcome">
+				<h2 class="welcome__title">¡Bienvenido!</h2>
+				<p class="welcome__description">Hola soy José Rangel y soy desarrollador. Vivo en la ciudad de Tijuana B.C. México. Mi lenguaje de programación favorito es <strong>javascript</strong>, con él he aprendido muchas cosas y con él desarrollo actualmente. Mi objetivo es usarlo como herramienta para crear soluciones tecnológicas a la medida de cualquier necesidad. <br /> Estoy convencido de que el trabajo en equipo es la mejor forma de avanzar en cualquier trabajo o proyecto.</p>
+
+				<h2 class="welcome__title">Stack de Desarrollo</h2>
+				<p class="welcome__description">A lo largo de los años en los que me he desempeñado como desarrollador he trabajado con diferentes tecnologías. A continuación quiero mostrarte mi stack de desarrollo actual y las herramientas con las que he trabajado.</p>
+
+				<div class="welcome__container-stack">
+					<!-- Frontend -->
+					<div class="welcome__stack">
+						<h4 class="welcome__stack__title">Frontend</h4>
+						<div class="welcome__stack__tools">
+							<div class="welcome__stack__tool">
+								<i class="fab fa-html5" style="color:#f16529;"></i>
+							</div>
+							<div class="welcome__stack__tool">
+								<i class="fab fa-css3-alt" style="color:#0170ba;"></i>
+							</div>
+							<div class="welcome__stack__tool">
+								<i class="fab fa-js" style="color:#ffe629; background-color: #2d2d2d;"></i>
+							</div>
+							<div class="welcome__stack__tool">
+								<i class="fab fa-bootstrap" style="color:#563d7c;"></i>
+							</div>
+							<div class="welcome__stack__tool">
+									<img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="cockroach" />
+							</div>
+							<div class="welcome__stack__tool">
+								<i class="fab fa-angular" style="color:#E04E39;"></i>
+							</div>
+							<div class="welcome__stack__tool">
+								<i class="fab fa-vuejs" style="color:#4fc08d;"></i>
+							</div>
+							<div class="welcome__stack__tool">
+								<i class="fab fa-react" style="color:#2196F3;"></i>
+							</div>
+						</div>
+					</div>
+					<!-- Backend -->
+					<div class="welcome__stack">
+						<h4 class="welcome__stack__title">Backend</h4>
+						<div class="welcome__stack__tools">
+							<div class="welcome__stack__tool">
+								<i class="fab fa-node" style="color:#43853d;"></i>
+							</div>
+							<div class="welcome__stack__tool">
+								<i class="fab fa-npm" style="color:#ED1C24;"></i>
+							</div>
+							<div class="welcome__stack__tool">
+								<i class="fab fa-yarn" style="color:#25799f;"></i>
+							</div>
+							<div class="welcome__stack__tool">
+								<i class="fab fa-python"></i>
+							</div>
+							<div class="welcome__stack__tool">
+								<i class="fab fa-php"></i>
+							</div>
+						</div>
+					</div>
+					<!-- Herramientas de Trabajo -->
+					<div class="welcome__stack">
+						<h4 class="welcome__stack__title">Gestión de proyectos</h4>
+						<div class="welcome__stack__tools">
+							<div class="welcome__stack__tool">
+								<i class="fab fa-git-alt" style="color:#f64e27;"></i>
+							</div>
+							<div class="welcome__stack__tool">
+								<i class="fab fa-trello" style="color:#0079bf;"></i>
+							</div>
+							<div class="welcome__stack__tool">
+								<i class="fab fa-github"></i>
+							</div>
+						</div>
+					</div>
+					<!-- Databases -->
+					<div class="welcome__stack">
+						<h4 class="welcome__stack__title">Bases de datos</h4>
+						<div class="welcome__stack__tools">
+							<div class="welcome__stack__tool">
+								<img src="https://www.vectorlogo.zone/logos/mongodb/mongodb-icon.svg" alt="mongodb" />
+							</div>
+							<div class="welcome__stack__tool">
+								<img src="https://cdn.worldvectorlogo.com/logos/postgresql.svg" alt="postgresql" />
+							</div>
+							<div class="welcome__stack__tool">
+								<img src="https://cdn.worldvectorlogo.com/logos/mysql-6.svg" alt="mysql" />
+							</div>
+							<div class="welcome__stack__tool">
+								<img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="firebase" />
+							</div>
+						</div>
+					</div>
+					<!-- Servicios en la nube -->
+					<div class="welcome__stack">
+						<h4 class="welcome__stack__title">Servicios en la nube</h4>
+						<div class="welcome__stack__tools">
+							<!-- <div class="welcome__stack__tool">
+								<i class="fab fa-aws" style="color:#13aa52;"></i>
+							</div> -->
+							<div class="welcome__stack__tool">
+								<i class="fab fa-digital-ocean" style="color:#0069ff;"></i>
+							</div>
+							<div class="welcome__stack__tool">
+								<img src="https://www.vectorlogo.zone/logos/heroku/heroku-icon.svg" alt="heroku" />
+							</div>
+							<div class="welcome__stack__tool">
+								<img src="https://www.vectorlogo.zone/logos/google_cloud/google_cloud-icon.svg" alt="googlecloud" />
+							</div>
+							<div class="welcome__stack__tool">
+								<img src="https://www.vectorlogo.zone/logos/zeit/zeit-icon.svg" alt="zeithq" />
+							</div>
+						</div>
+					</div>
+					<!-- Servidores -->
+					<div class="welcome__stack">
+						<h4 class="welcome__stack__title">Servidores</h4>
+						<div class="welcome__stack__tools">
+							<div class="welcome__stack__tool">
+								<i class="fab fa-linux" style="color:#2d2d2d;"></i>
+							</div>
+							<div class="welcome__stack__tool">
+								<i class="fab fa-ubuntu" style="color:#e95420;"></i>
+							</div>
+						</div>
+					</div>
+					<!--Metodologias-->
+					<!-- <div class="welcome__stack">
+						<h4 class="welcome__stack__title">Metodologias</h4>
+						<div class="welcome__stack__tools">
+							<div class="welcome__stack__tool">
+								SCRUM
+							</div>
+						</div>
+					</div> -->
+					<!--Pruebas-->
+					<!-- <div class="welcome__stack">
+						<h4 class="welcome__stack__title">Pruebas</h4>
+						<div class="welcome__stack__tools">
+							<div class="welcome__stack__tool">
+								Cypress
+							</div>
+							<div class="welcome__stack__tool">
+								Jestjs
+							</div>
+						</div>
+					</div> -->
+				</div>
+			</article>
+
+			<article class="portfolio" id="portfolio">
+				<h2 class="portfolio__title">Mi Portafolio</h2>
+				<p class="portfolio__description">En esta sección encontrarás proyectos, pruebas e inventos en los que he trabajado y algunos otros que trabajo actualmente. Todo lo que sé hacer con las tecnologias que uso.</p>
+				<blockquote class="portfolio__blockquote">Puedes encontrar más información sobre mis proyectos en mis perfiles de <strong>Github</strong> o <strong>Bitbucket</strong>.</blockquote>
+
+				<section class="portfolio__works">
+					<!-- BUSSER -->
+					<article class="portfolio__works__item" id="busser">
+						<div class="portfolio__works__item__header">
+							<a href="https://github.com/JosephRangel/search-app" target="_blank" class="portfolio__works__item__header__title__link">Leuchtturm</a>
+							<img src="public/image/lighthouse.png" class="portfolio__works__item__header__logo">
+						</div>
+						<p class="portfolio__works__item__resume">Es una pagina responsive que funciona como directorio, puede buscar por cualquiera de los datos que se encuentran en la descripcion de los cards.</p>
+						<div class="portfolio__works__tools">
+							<div class="portfolio__works__tools__role">Desarrollo Frontend</div>
+							<div>
+								<i class="fab fa-js fa-lg" style="color:#ffeb00;background:#2d2d2d;"></i>
+								<i class="fab fa-react fa-lg" style="color:#2196F3;"></i>
+								<i class="fab fa-tailwind fa-lg" style="color:#c6538c;"></i>
+								<i class="fab fa-html5 fa-lg" style="color:#e57f16;"></i>
+							</div>
+						</div>
+					</article>
+				</section>
+			</article>
+
+			<!-- <article class="contact" id="contact">
+				<h2 class="contact__title">¿Necesitas soluciones tecnológicas para ti o tu empresa?</h2>
+				<p class="contact__description">Has llegado al lugar indicado. Actualmente hago parte de un excelente grupo de trabajo, dispuesto a solucionar tu problema usando las mejores técnicas de análisis y desarrollo de software. <br> <br> Puedes contactarme para tomarnos un café y así hablar de tu idea. Podrás encontrar mis redes sociales en el panel principal o si deseas, puedes escribirme a mi correo <a class="welcome__community" href="https://mail.google.com/mail/?view=cm&fs=1&to=jfbaquerocelis@gmail.com" target="_blank">jfbaquerocelis@gmail.com</a>. <br><br> Si tienes algún comentario con respecto a mi portafolio, por favor házmelo saber <a class="welcome__community" href="https://github.com/jfbaquerocelis/Portafolio/issues" target="_blank">aquí</a>.</p>
+
+				<h2 class="contact__title">¿Quieres hacer parte de MonteríaJS?</h2>
+				<p class="contact__description">¡Excelente! <br> <br> Puedes escribirme y comentarme de qué forma quieres hacer parte de la comunidad, es decir, ya sea como speaker, colaborador, patrocinador o formar parte del equipo organizador. <br> Ten la plena seguridad que estaremos con los brazos abiertos esperando a que contribuyas con tus ideas y tus conocimientos a través de la comunidad para transmitirlo hacia todas las personas que disfrutan y asisten a nuestros eventos. <br> <br> Puedes seguirnos en nuestras redes sociales ¡Te esperamos!</p>
+
+				<div class="contact__social">
+					<a class="contact__social__link" href="https://instagram.com/monteriajs" target="_blank">
+						<i class="fab fa-instagram" style="color: palevioletred;"></i>
+					</a>
+					<a class="contact__social__link" href="https://twitter.com/monteriajs" target="_blank">
+						<i class="fab fa-twitter-square" style="color: #2196F3;"></i>
+					</a>
+					<a class="contact__social__link" href="https://facebook.com/monteriajs" target="_blank">
+						<i class="fab fa-facebook-square" style="color: #4267b2;"></i>
+					</a>
+					<a class="contact__social__link" href="https://github.com/monteriajs" target="_blank">
+						<i class="fab fa-github-square" style="color: #2d2d2d;"></i>
+					</a>
+					<a class="contact__social__link" href="https://meetup.com/monteriajs" target="_blank">
+						<i class="fab fa-meetup" style="color: #ED1C24;"></i>
+					</a>
+				</div>
+			</article> -->
+		</section>
+	</div>
+
+	<script src="https://kit.fontawesome.com/74a0a4aba0.js"></script>
+	<script src="public/js/main.js"></script>
+</body>
+</html>
